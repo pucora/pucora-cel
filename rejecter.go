@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/google/cel-go/cel"
-	"github.com/velonetics/velonetics-cel/v2/internal"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
+	"github.com/pucora/velonetics-cel/v2/internal"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
 )
 
 func NewRejecter(l logging.Logger, cfg *config.EndpointConfig) *Rejecter {

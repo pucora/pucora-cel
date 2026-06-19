@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/velonetics/velonetics-cel/v2/internal"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
-	"github.com/velonetics/lura/v2/proxy"
+	"github.com/pucora/velonetics-cel/v2/internal"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
+	"github.com/pucora/lura/v2/proxy"
 )
 
 func BenchmarkProxyFactory_reqParams_int(b *testing.B) {

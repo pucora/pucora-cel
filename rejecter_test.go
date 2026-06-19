@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/velonetics/velonetics-cel/v2/internal"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
+	"github.com/pucora/velonetics-cel/v2/internal"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
 )
 
 func TestRejecter_Reject(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/checker/decls"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
 )
 
 type InterpretableDefinition struct {
@@ -36,7 +36,7 @@ func ConfigGetter(e config.ExtraConfig) ([]InterpretableDefinition, bool) {
 	return def, true
 }
 
-const Namespace = "github.com/velonetics/velonetics-cel"
+const Namespace = "github.com/pucora/velonetics-cel"
 
 var (
 	ErrParsing  = errors.New("cel: error parsing the expression")

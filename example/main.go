@@ -9,21 +9,21 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
-	"github.com/velonetics/lura/v2/proxy"
-	veloneticsgin "github.com/velonetics/lura/v2/router/gin"
-	"github.com/velonetics/lura/v2/transport/http/client"
-	"github.com/velonetics/lura/v2/transport/http/server"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
+	"github.com/pucora/lura/v2/proxy"
+	veloneticsgin "github.com/pucora/lura/v2/router/gin"
+	"github.com/pucora/lura/v2/transport/http/client"
+	"github.com/pucora/lura/v2/transport/http/server"
 
-	cel "github.com/velonetics/velonetics-cel/v2"
+	cel "github.com/pucora/velonetics-cel/v2"
 )
 
 func main() {
 	port := flag.Int("p", 0, "Port of the service")
 	logLevel := flag.String("l", "DEBUG", "Logging level")
 	debug := flag.Bool("d", false, "Enable the debug")
-	configFile := flag.String("c", "/etc/velonetics/configuration.json", "Path to the configuration filename")
+	configFile := flag.String("c", "/etc/pucora/configuration.json", "Path to the configuration filename")
 	flag.Parse()
 
 	parser := config.NewParser()
@@ -36,7 +36,7 @@ func main() {
 		serviceConfig.Port = *port
 	}
 
-	logger, err := logging.NewLogger(*logLevel, os.Stdout, "[VELONETICS]")
+	logger, err := logging.NewLogger(*logLevel, os.Stdout, "[PUCORA]")
 	if err != nil {
 		log.Fatal("ERROR:", err.Error())
 	}
