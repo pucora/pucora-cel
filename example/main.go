@@ -12,11 +12,11 @@ import (
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/logging"
 	"github.com/pucora/lura/v2/proxy"
-	veloneticsgin "github.com/pucora/lura/v2/router/gin"
+	pucoragin "github.com/pucora/lura/v2/router/gin"
 	"github.com/pucora/lura/v2/transport/http/client"
 	"github.com/pucora/lura/v2/transport/http/server"
 
-	cel "github.com/pucora/velonetics-cel/v2"
+	cel "github.com/pucora/pucora-cel/v2"
 )
 
 func main() {
@@ -46,11 +46,11 @@ func main() {
 	// cel proxy wrapper
 	pf := cel.ProxyFactory(logger, proxy.NewDefaultFactory(bf, logger))
 
-	routerFactory := veloneticsgin.NewFactory(veloneticsgin.Config{
+	routerFactory := pucoragin.NewFactory(pucoragin.Config{
 		Engine:         gin.Default(),
 		ProxyFactory:   pf,
 		Logger:         logger,
-		HandlerFactory: veloneticsgin.EndpointHandler,
+		HandlerFactory: pucoragin.EndpointHandler,
 		RunServer:      server.RunServer,
 	})
 

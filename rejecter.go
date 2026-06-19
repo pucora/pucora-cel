@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/google/cel-go/cel"
-	"github.com/pucora/velonetics-cel/v2/internal"
+	"github.com/pucora/pucora-cel/v2/internal"
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/logging"
 )

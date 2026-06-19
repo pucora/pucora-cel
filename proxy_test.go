@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pucora/velonetics-cel/v2/internal"
+	"github.com/pucora/pucora-cel/v2/internal"
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/logging"
 	"github.com/pucora/lura/v2/proxy"

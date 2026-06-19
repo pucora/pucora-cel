@@ -1,4 +1,4 @@
-module github.com/pucora/velonetics-cel/v2
+module github.com/pucora/pucora-cel/v2
 
 go 1.24.0
 

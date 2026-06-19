@@ -1,2 +1,2 @@
-# velonetics-cel
+# pucora-cel
 Common Expression Language (CEL) module for the Pucora framework

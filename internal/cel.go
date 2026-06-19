@@ -36,7 +36,7 @@ func ConfigGetter(e config.ExtraConfig) ([]InterpretableDefinition, bool) {
 	return def, true
 }
 
-const Namespace = "github.com/pucora/velonetics-cel"
+const Namespace = "github.com/pucora/pucora-cel"
 
 var (
 	ErrParsing  = errors.New("cel: error parsing the expression")
